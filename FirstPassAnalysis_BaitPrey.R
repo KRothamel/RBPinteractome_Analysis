@@ -11,7 +11,7 @@ library(readxl)
 #read-in table 
 master_table<- read_csv("/Users/katierothamel/Dropbox (Personal)/Rothamel,Katherine/Projects/RBP_Networks/RawData/20220417_RBP_fullData2_final_PPI_table_withIntensity_IP_DeepProteome_forStoichiometry.csv")
 
-#No self-loppps
+#No self-loops
 master_table<- master_table %>% filter(Prey != Bait) 
 
 #ordering bait based of life-cyclestep
